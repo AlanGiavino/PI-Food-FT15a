@@ -1,0 +1,35 @@
+.background-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    width: 100px; 
+    height: 100px;
+}
+
+.img-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+    width: 1280px; 
+    height: 657px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    width: 500px; 
+    height: 250px;
+}
+
+.btn{
+    position: absolute;
+    top: 75%;
+    left: 250px;
+    padding: 15px 60px;
+    border-radius: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}

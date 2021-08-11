@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getRecipes, switchLoading } from '../../Redux/action';
 import Card from '../Card/Card.jsx';
 import Search from '../Search/Search.jsx';
+import notFound from '../../img/notfound.png';
+import './Home.css'
 
 export default function Home() {
 	const dispatch = useDispatch();
@@ -177,22 +179,6 @@ export default function Home() {
 				});
 				setOrderedRecipes(low);
 			}
-			/*if (e.target.value === 'highHealth') {
-				const asc = [...allRecipes].sort((a, b) => {
-					return a.healthScore < b.healthScore
-						? 1
-						: -1;
-				});
-				setOrderedRecipes(asc);
-			}
-			if (e.target.value === 'lowHealth') {
-				const des = [...allRecipes].sort((a, b) => {
-					return a.healthScore > b.healthScore
-						? 1
-						: -1;
-				});
-				setOrderedRecipes(des);
-			}*/
 		}
 	}
 
@@ -266,25 +252,18 @@ export default function Home() {
 						<div>
 							<span>Sort: </span>
 							<select onChange={handleSort}>
-								<option default value=''></option>
+								<option default value='all'>All</option>
 								<option value='asc'>A-Z</option>
 								<option value='des'>Z-A</option>
 							</select>
 
 							<span>Order: </span>
 							<select onChange={handleSort}>
-								<option default value=''></option>
+								<option default value='all'>All</option>
 								<option value='high'>High</option>
 								<option value='low'>Low</option>
 							</select>
-
-							{/*<span>Health Score: </span>
-							<select onChange={handleSort}>
-								<option default value=''></option>
-								<option value='highHealth'>High</option>
-								<option value='lowHealth'>Low</option>
-							</select>*/}
-
+							
 							<span>Filter By Diet: </span>
 							<select
 								className='filter-select'
@@ -334,7 +313,14 @@ export default function Home() {
 						/>
 					))
 				) : (
-					<h1>Recipes not found! Try again.</h1>
+					<div>
+					<img className='not-found' 
+					src={notFound}
+					alt='Not found'/>
+					<h1> Upss!! Recipes not found!</h1>
+					<button className='btn-not-found' onClick={(ev) => {setSearch('');
+					setFilteredRecipes(ev, 'empty')}}>Try again</button>
+					</div>
 				)}
 			</div>
 			<div className='pagination'>

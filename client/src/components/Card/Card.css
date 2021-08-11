@@ -1,0 +1,36 @@
+.card{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 60vh;
+    border: 5px solid #dd6900;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+.img-recipe img{
+	width: 25vw;
+}
+.card-info{
+	width: 25vw;
+    height: 50vh;
+    background-color: #e4b349;
+}
+.card-info a{
+	color: blue;
+    text-decoration: none;
+}
+.card-info a:hover {
+    color: #108ec9
+}
+.card-title{
+	font-family: 'Teko';
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card-diets{
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: blue;
+    text-align: center;
+}

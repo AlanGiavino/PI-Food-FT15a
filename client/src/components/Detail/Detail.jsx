@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRecipesById } from '../../Redux/action';
+import './Detail.css'
 
 export default function Detail({
 	match: {

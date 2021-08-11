@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { getRecipesByName, switchLoading } from '../../Redux/action';
+import './Search.css'
 
 export default function Search({ setSearch }) {
 	const [nameRecipe, setNameRecipe] = useState('');
