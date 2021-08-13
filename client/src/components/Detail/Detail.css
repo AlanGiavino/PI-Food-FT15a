@@ -1,5 +1,5 @@
 .main-container {
-	background-color: #ebebeb;
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -11,9 +11,10 @@
 }
 
 .detail-title {
-	font-family: 'Rubik';
-	font-size: 3rem;
-	color: #ff9f1c;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: black;
 	margin: 0.5rem 0;
 }
 
@@ -23,8 +24,10 @@
 }
 
 .detail-points h1 {
-	font-family: 'Poppins';
-	color: #ff9f1c;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: black;
 }
 
 .left-container {
@@ -44,16 +47,19 @@
 }
 
 .right-container h2 {
-	font-family: 'Rubik';
-	color: #ff9f1c;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	color: black;
 }
 
 .detail-summary {
-	font-family: 'Poppins';
-	text-align: justify;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: left;
+	line-height: 1.5em;
 }
 
 .detail-instructions {
-	font-family: 'Poppins';
-	text-align: justify;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: left;
+	line-height: 1.5em;
 }

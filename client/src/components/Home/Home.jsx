@@ -4,6 +4,7 @@ import { getRecipes, switchLoading } from '../../Redux/action';
 import Card from '../Card/Card.jsx';
 import Search from '../Search/Search.jsx';
 import notFound from '../../img/notfound.png';
+import Loading from '../../img/loading.gif'
 import './Home.css'
 
 export default function Home() {
@@ -252,14 +253,14 @@ export default function Home() {
 						<div>
 							<span>Sort: </span>
 							<select onChange={handleSort}>
-								<option default value='all'>All</option>
+								<option default value=''>All</option>
 								<option value='asc'>A-Z</option>
 								<option value='des'>Z-A</option>
 							</select>
 
 							<span>Order: </span>
 							<select onChange={handleSort}>
-								<option default value='all'>All</option>
+								<option default value=''>All</option>
 								<option value='high'>High</option>
 								<option value='low'>Low</option>
 							</select>
@@ -270,7 +271,7 @@ export default function Home() {
 								onChange={(e) => setFilter(e.target.value)}
 							>
 								<option default value=''>
-									Select a Diet
+									All
 								</option>
 								<option value='gluten free'>Gluten Free</option>
 								<option value='dairy free'>Ketogenic</option>
@@ -296,11 +297,10 @@ export default function Home() {
 				{loading ? (
 					<div>
 						<img
-							className='loading rotated'
-							src={""}
+							className='loading'
+							src={Loading}
 							alt='Loading'
 						/>
-						<h2>¡Loading...!</h2>
 					</div>
 				) : recipes.length>0 ? (
 					[...recipes].map((recipe) => (
@@ -317,7 +317,7 @@ export default function Home() {
 					<img className='not-found' 
 					src={notFound}
 					alt='Not found'/>
-					<h1> Upss!! Recipes not found!</h1>
+					<h1 className='not-found-text'> Upss!! Recipes not found!</h1>
 					<button className='btn-not-found' onClick={(ev) => {setSearch('');
 					setFilteredRecipes(ev, 'empty')}}>Try again</button>
 					</div>

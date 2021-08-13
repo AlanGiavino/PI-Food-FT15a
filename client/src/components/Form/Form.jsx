@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDiets } from '../../Redux/action';
 import axios from 'axios';
+import './Form.css'
 
 const initialForm = {
 	title: '',

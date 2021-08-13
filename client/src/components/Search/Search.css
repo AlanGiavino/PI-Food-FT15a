@@ -1,22 +1,28 @@
 .input-search {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
 	padding: 0 0.5rem;
 	height: 6vh;
 	width: 20vw;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 .btn-search {
-	font-family: 'Rubik', sans-serif;
-	background-color: #ff9f1c;
-	border-radius: 10px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+	background-color: black;
+	border-radius: 5px;
 	cursor: pointer;
-	color: #ffffff;
+	color: white;
+	letter-spacing: .1rem;
 	font-size: 1.2em;
 	width: 8vw;
-	height: 6vh;
+	height: 7vh;
+	padding: 0 0.5rem;
 	margin-left: 1rem;
+	line-height: 2;
 }
 
 .btn-search:hover {
-	background-color: #ffbf69;
-	color: #ebebeb;
+	background-color: rgb(22, 22, 22);
+    color: rgb(185, 185, 185);
 }

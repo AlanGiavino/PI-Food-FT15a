@@ -1,10 +1,10 @@
 .navbar {
-	background-color: #ff9f1c;
+	background-color: black;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	height: 10vh;
+	height: 80px;
 }
 
 .navbar-left {
@@ -18,14 +18,15 @@
 }
 
 .list-item a {
-	font-family: 'Rubik', sans-serif;
-	color: #fff;
-	font-size: 1.3rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
 	margin-right: 1rem;
 }
 
 a:hover {
-	color: #693d04;
+	color: rgb(187, 185, 185);
 }

@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 25vw;
-    height: 60vh;
-    border: 5px solid #dd6900;
+    height: 80vh;
     margin: 1rem 0;
     border-radius: 5px;
 }
@@ -14,23 +13,26 @@
 .card-info{
 	width: 25vw;
     height: 50vh;
-    background-color: #e4b349;
+    background-color: #000000;
 }
 .card-info a{
-	color: blue;
+	color: white;
     text-decoration: none;
 }
 .card-info a:hover {
-    color: #108ec9
+    color: #888888
 }
 .card-title{
-	font-family: 'Teko';
-    font-size: 1.5rem;
-    text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-left: 4px;
+    text-align: left ;
+    text-transform: uppercase;
 }
 .card-diets{
-    font-size: 1rem;
-    text-transform: capitalize;
-    color: blue;
-    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 4px;
+    text-align: left ;
 }

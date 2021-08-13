@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRecipesById } from '../../Redux/action';
+import Loading from '../../img/loading.gif'
 import './Detail.css'
 
 export default function Detail({
@@ -25,11 +26,10 @@ export default function Detail({
 				{loading ? (
 					<div>
 						<img
-							className='loading rotated'
-							src={""}
+							className='loading'
+							src={Loading}
 							alt='Loading'
 						/>
-						<h2>¡Loading...!</h2>
 					</div>
 				) : recipe.title ? (
 					<>

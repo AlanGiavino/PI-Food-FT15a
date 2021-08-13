@@ -2,28 +2,32 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #ebebeb;
+    background-color: white;
     height: 10vh;
   }
   
   .filter-sort span {
-    font-family: 'Rubik';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 1.2rem;
     margin-right: 0.3rem;
   }
   
   .filter-sort select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
     width: 5vw;
     height: 4vh;
     margin-right: 1.5rem;
+    border-radius: 5px;
   }
-  
+
   .filter-select {
     width: 10vw !important;
   }
   
   .recipes-home {
-    background-color: #ebebeb;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -39,18 +43,20 @@
   }
   
   .num-page {
-    font-family: 'Recursive';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 2rem;
-    color: #ff9f1c;
+    color: black;
   }
   
   .btn-page {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
     font-weight: 500;
-    background-color: #ff9f1c;
-    border-radius: 10px;
+    background-color: black;
+    border-radius: 5px;
     cursor: pointer;
-    color: #ffffff;
+    color: white;
     font-size: 1.2em;
     width: 12vw;
     height: 5vh;
@@ -58,8 +64,8 @@
   }
   
   .btn-page:hover {
-    background-color: #ffbf69;
-    color: #ebebeb;
+    background-color: rgb(22, 22, 22);
+    color: rgb(185, 185, 185);
   }
 
   .not-found {
@@ -67,29 +73,49 @@
     left: 80px;
     display:block;
     margin:auto;
-  
+    width: 325px; 
+    height: 325px;
   }
   
-  .h1{
+  .not-found-text{
       margin-top: 10px;
       margin-bottom: 5px;
+      font-size:2em;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      text-transform: uppercase;
     }
 
   .btn-not-found {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    background-color: #ff9f1c;
-    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 5px;
     cursor: pointer;
-    color: #ffffff;
-    font-size: 1.2em;
+    color: white;
+    font-size: 1.5em;
+    width: 20vw;
+    height: 8vh;
+    margin: 0 2rem;
     align-items: center;
     left: 80px;
     display:block;
     margin:auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .btn-not-found:hover {
-    background-color: #ffbf69;
-    color: #ebebeb;
+    background-color: rgb(22, 22, 22);
+    color: rgb(185, 185, 185);
+  }
+
+  .loading {
+    align-items: center;
+    width: 500px; 
+    height: 500px;
+  }
+
+  .h2-loading{
+    align-items: center;
+    left: 25%;
   }
