@@ -36,7 +36,7 @@ export default function Detail({
 						<h1 className='detail-title'>{recipe.title}</h1>
 						<div className='detail-container'>
 							<div className='left-container'>
-								<img src={recipe.image} alt='' />
+								<img src={recipe.image} alt=''/>
 								<div className='detail-points'>
 									<h1>
 										{recipe.score &&

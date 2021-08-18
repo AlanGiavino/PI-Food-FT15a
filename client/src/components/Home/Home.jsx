@@ -13,7 +13,6 @@ export default function Home() {
 	const searchRecipes = useSelector((state) => state.recipesByName);
 	const allRecipes = useSelector((state) => state.recipes);
 	const loading = useSelector((state) => state.loading);
-
 	const [search, setSearch] = useState(false);
 	const [page, setPage] = useState(1);
 	const [offset, setOffset] = useState(0);
@@ -289,7 +288,9 @@ export default function Home() {
 								<option value='whole 30'>Whole30</option>;
 							</select>
 						</div>
+						<div>
 						<Search setSearch={setSearch} />
+						</div>
 					</div>
 				</div>
 			</div>

@@ -43,7 +43,7 @@ export function getDiets() {
 }
 
 export function switchLoading(boolean) {
-    return function(dispatch) {
+    return (dispatch) => {
         dispatch({ type: SWITCH_LOADING, payload: boolean })
     }
 }

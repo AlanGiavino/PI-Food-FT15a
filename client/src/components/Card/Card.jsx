@@ -14,17 +14,15 @@ export default function Card({id, title, image, diets}) {
 	}
 	return (
 		<React.Fragment>
-			<div className='card'>
+			<Link to={`/recipes/${id}`} className='card'>
 				<div className='img-recipe'>
-					<img src={image} alt={title}/>
+					<img src={image || 'https://media.giphy.com/media/lGbz7CsaCj4Tm/giphy.gif'} alt={title}/>
 				</div>
-				<div className='card-info'>
-					<Link to={`/recipes/${id}`}>
+					<div className='card-info'>
 	                	<h2 className='card-title'>{title}</h2>
-	                </Link>
-					<h4 className='card-diets'>{getDiets()}</h4>
-				</div>
-			</div>
+						<h4 className='card-diets'>{getDiets()}</h4>
+					</div>
+			</Link>
     	</React.Fragment>
 	)
 }

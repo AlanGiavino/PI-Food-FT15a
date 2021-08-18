@@ -6,8 +6,10 @@ import Logo from '../../img/Logo Home.png'
 export default function Navbar() {
     return (
         <div className="navbar">
-            <div className='navbar-left'>
-                <img src={Logo} />
+            <div className='logo'>
+            <Link to="/" >
+                <img src={Logo}/>
+            </Link>
                 </div>
             <nav>
                 <ul className="list">

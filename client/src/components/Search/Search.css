@@ -20,9 +20,11 @@
 	padding: 0 0.5rem;
 	margin-left: 1rem;
 	line-height: 2;
+	transition: transform 250ms ease;
 }
 
 .btn-search:hover {
 	background-color: rgb(22, 22, 22);
     color: rgb(185, 185, 185);
+	transform: scale(1.02);
 }

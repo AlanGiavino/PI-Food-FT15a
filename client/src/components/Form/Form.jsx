@@ -11,6 +11,7 @@ const initialForm = {
 	summary: '',
 	diets: [],
 	instructions: '',
+	image: '',
 };
 
 const validateForm = function (form) {
