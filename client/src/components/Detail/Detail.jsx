@@ -46,6 +46,7 @@ export default function Detail({
 										{recipe.healthScore &&
 											`${recipe.healthScore}%`}
 									</h1>
+									<h1>Healthy</h1>
 								</div>
 							</div>
 							<div className='right-container'>

@@ -7,7 +7,7 @@ import notFound from '../../img/notfound.png';
 import Loading from '../../img/loading.gif'
 import './Home.css'
 
-export default function Home() {
+export default function Home(handleClick) {
 	const dispatch = useDispatch();
 
 	const searchRecipes = useSelector((state) => state.recipesByName);
@@ -252,7 +252,7 @@ export default function Home() {
 						<div>
 							<span>Sort: </span>
 							<select onChange={handleSort}>
-								<option default value=''>All</option>
+								<option  default value=''>All</option>
 								<option value='asc'>A-Z</option>
 								<option value='des'>Z-A</option>
 							</select>
@@ -287,6 +287,7 @@ export default function Home() {
 								<option value='primal'>Primal</option>
 								<option value='whole 30'>Whole30</option>;
 							</select>
+
 						</div>
 						<div>
 						<Search setSearch={setSearch} />
