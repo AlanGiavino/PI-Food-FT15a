@@ -4,7 +4,6 @@ import {
 	GET_RECIPE_BY_ID,
 	GET_DIETS,
 	SWITCH_LOADING,
-	// GET_ORDER
 } from './action';
 
 const initialState = {
@@ -49,11 +48,6 @@ function reducer(state = initialState, action) {
 		default: {
 			return state;
 		}
-	// 	case GET_ORDER:
-    //    		return { ...state, filter: action.payload };
-	// 	default:
-    //   		return state;
-	// }
 	}
 }
 

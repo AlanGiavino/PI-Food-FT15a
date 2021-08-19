@@ -7,16 +7,16 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className='logo'>
-            <Link exact to="/" >
+            <Link to="/" >
                 <img src={Logo}/>
             </Link>
                 </div>
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <Link exact to="/recipes" >Explore Recipes</Link>
-                        <Link exact to="/create" >Create a Recipe</Link>
-                        <Link exact to="/about" >About</Link>
+                        <Link to="/recipes" >Explore Recipes</Link>
+                        <Link to="/create" >Create a Recipe</Link>
+                        <Link to="/about" >About</Link>
                     </li>
                 </ul>
             </nav>
