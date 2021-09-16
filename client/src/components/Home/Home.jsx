@@ -98,8 +98,12 @@ export default function Home() {
 						? 1
 						: -1;
 				});
-				setFilteredRecipes(high);
+				setFilteredRecipes(high);}
+			if(e.target.value === 'setenta') {
+				const setenta = [...filteredRecipes].filter(a => a.healthScore > 70)
 			}
+
+			
 			if (e.target.value === 'low') {
 				const low = [...filteredRecipes].sort((a, b) => {
 					return (a.score || a.spoonacularScore) >
@@ -262,6 +266,7 @@ export default function Home() {
 								<option default value=''></option>
 								<option value='high'>High</option>
 								<option value='low'>Low</option>
+								<option value='setenta'>+70</option>
 							</select>
 							
 							<span>Filter By Diet: </span>
@@ -319,7 +324,7 @@ export default function Home() {
 					<img className='not-found' 
 					src={notFound}
 					alt='Not found'/>
-					<h1 className='not-found-text'> Upss!! Recipes not found!</h1>
+					<h1 className='not-found-text'> </h1>
 					<button className='btn-not-found' onClick={(ev) => {setSearch('');
 					setFilteredRecipes(ev, 'empty')}}>Try again</button>
 					</div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getRecipes } from '../../Redux/action';
+import { getRecipesByName } from '../../Redux/action';
 import './Search.css'
 
 export default function Search({ setSearch }) {
@@ -14,7 +14,7 @@ export default function Search({ setSearch }) {
 	function handleSubmit(e) {
 		if (nameRecipe) {
 			e.preventDefault();
-			dispatch(getRecipes(nameRecipe));
+			dispatch(getRecipesByName(nameRecipe));
 			setSearch(true);
 			setNameRecipe('');
 		}else{
