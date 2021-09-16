@@ -22,42 +22,42 @@
 ## Imagenes del proyecto
 <br>
 <h2 align="left">
-Landing Page
+🟨Landing Page
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/1.png" />
 </p>
 <br>
 <h2 align="left">
-Home
+🟨Home
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/2.png" />
 </p>
 <br>
 <h2 align="left">
-Animacion de carga
+🟨Animacion de carga
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/3.png" />
 </p>
 <br>
 <h2 align="left">
-Detalle de la receta
+🟨Detalle de la receta
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/4.png" />
 </p>
 <br>
 <h2 align="left">
-Crear una receta
+🟨Crear una receta
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/5.png" />
 </p>
 <br>
 <h2 align="left">
-Acerca del proyecto
+🟨Acerca del proyecto
 </h2>
 <p align="left">
   <img height="400" src="./img-Readme/6.png" />
