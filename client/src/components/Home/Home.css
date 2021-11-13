@@ -27,7 +27,7 @@
   }
   
   .recipes-home {
-    background-color: white;
+    background:linear-gradient(45deg, #DDDDDD 0%, #EFEFEF 50%, #FFFFFF 100%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
