@@ -14,10 +14,19 @@
 - El proyecto tendrá una duración máxima de tres semanas.
 
 #### Tecnologías utilizadas:
-- [ ] React
-- [ ] Redux
-- [ ] Express
-- [ ] Sequelize - Postgres
+- React
+- Redux
+- Express
+- Sequelize - Postgres
+
+## Como instalar el Proyecto:
+- Primero deberas crearte una cuenta en <a> https://spoonacular.com/ </a>, donde te otorgarán una API KEY para usarlo mas adelante.
+- Segundo deberas hacer npm install para instalar todas las dependencias, luego deberas crear un archivo `.env` en la carpeta api que contenga la siguiente información:
+- `DB_HOST`=localhost
+- `DB_USER`=usuario de su base de datos
+- `DB_PASSWORD`=contraseña de su base de datos
+- `API_KEY`=clave de la API
+- `PORT`=número del puerto que se utilizará
 
 ## Imagenes del proyecto
 <br>
